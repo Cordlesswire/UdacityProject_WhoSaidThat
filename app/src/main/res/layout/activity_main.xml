@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.thepolymath.whosaidthat.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome1"
+            android:textSize="24sp" />
+
+        <TextView
+            style="@style/layout"
+            android:text="@string/welcome2"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/layout"
+            android:hint="@string/name"
+            android:inputType="textCapWords" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/q1"
+            style="@style/quote"
+            android:text="@string/q1" />
+
+        <RadioGroup
+            android:id="@+id/gr1"
+            style="@style/layout"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/q1_1"
+                style="@style/option"
+                android:onClick="forQ1"
+                android:text="@string/ae" />
+
+            <RadioButton
+                android:id="@+id/q1_2"
+                style="@style/option"
+                android:onClick="forQ1"
+                android:text="@string/sj" />
+
+            <RadioButton
+                android:id="@+id/q1_3"
+                style="@style/option"
+                android:onClick="forQ1"
+                android:text="@string/in" />
+
+            <RadioButton
+                android:id="@+id/q1_4"
+                style="@style/option"
+                android:onClick="forQ1"
+                android:text="@string/nt" />
+        </RadioGroup>
+
+        <View style="@style/line" />
+
+        <TextView
+            android:id="@+id/q2"
+            style="@style/quote"
+            android:text="@string/q2" />
+
+        <RadioGroup
+            android:id="@+id/gr2"
+            style="@style/layout"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/q2_1"
+                style="@style/option"
+                android:onClick="forQ2"
+                android:text="@string/eap" />
+
+            <RadioButton
+                android:id="@+id/q2_2"
+                style="@style/option"
+                android:onClick="forQ2"
+                android:text="@string/wam" />
+
+            <RadioButton
+                android:id="@+id/q2_3"
+                style="@style/option"
+                android:onClick="forQ2"
+                android:text="@string/ws" />
+
+            <RadioButton
+                android:id="@+id/q2_4"
+                style="@style/option"
+                android:onClick="forQ2"
+                android:text="@string/bm" />
+        </RadioGroup>
+
+        <View style="@style/line" />
+
+        <TextView
+            android:id="@+id/q3"
+            style="@style/quote"
+            android:text="@string/q3" />
+
+        <RadioGroup
+            android:id="@+id/gr3"
+            style="@style/layout"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/q3_1"
+                style="@style/option"
+                android:onClick="forQ3"
+                android:text="@string/sk" />
+
+            <RadioButton
+                android:id="@+id/q3_2"
+                style="@style/option"
+                android:onClick="forQ3"
+                android:text="@string/wd" />
+
+            <RadioButton
+                android:id="@+id/q3_3"
+                style="@style/option"
+                android:onClick="forQ3"
+                android:text="@string/gbs" />
+
+            <RadioButton
+                android:id="@+id/q3_4"
+                style="@style/option"
+                android:onClick="forQ3"
+                android:text="@string/hf" />
+        </RadioGroup>
+
+        <View style="@style/line" />
+
+        <TextView
+            android:id="@+id/q4"
+            style="@style/quote"
+            android:text="@string/q4" />
+
+        <RadioGroup
+            android:id="@+id/gr4"
+            style="@style/layout"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/q4_1"
+                style="@style/option"
+                android:onClick="forQ4"
+                android:text="@string/ae" />
+
+            <RadioButton
+                android:id="@+id/q4_2"
+                style="@style/option"
+                android:onClick="forQ4"
+                android:text="@string/ldc" />
+
+            <RadioButton
+                android:id="@+id/q4_3"
+                style="@style/option"
+                android:onClick="forQ4"
+                android:text="@string/pp" />
+
+            <RadioButton
+                android:id="@+id/q4_4"
+                style="@style/option"
+                android:onClick="forQ4"
+                android:text="@string/ldv" />
+        </RadioGroup>
+
+        <View style="@style/line" />
+
+        <TextView
+            android:id="@+id/q5"
+            style="@style/quote"
+            android:text="@string/q5" />
+
+        <RadioGroup
+            android:id="@+id/gr5"
+            style="@style/layout"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/q5_1"
+                style="@style/option"
+                android:onClick="forQ5"
+                android:text="@string/hf" />
+
+            <RadioButton
+                android:id="@+id/q5_2"
+                style="@style/option"
+                android:onClick="forQ5"
+                android:text="@string/zz" />
+
+            <RadioButton
+                android:id="@+id/q5_3"
+                style="@style/option"
+                android:onClick="forQ5"
+                android:text="@string/th" />
+
+            <RadioButton
+                android:id="@+id/q5_4"
+                style="@style/option"
+                android:onClick="forQ5"
+                android:text="@string/wg" />
+        </RadioGroup>
+
+        <View style="@style/line" />
+
+        <TextView
+            style="@style/quote"
+            android:layout_marginBottom="4dp"
+            android:text="@string/who" />
+
+        <TextView
+            android:id="@+id/q6"
+            style="@style/quote"
+            android:layout_marginBottom="16dp"
+            android:text="@string/q6" />
+
+        <EditText
+            android:id="@+id/ans6"
+            style="@style/layout"
+            android:hint="@string/answer"
+            android:inputType="textCapWords" />
+
+        <View style="@style/line" />
+
+        <TextView
+            style="@style/quote"
+            android:layout_marginBottom="4dp"
+            android:text="@string/who" />
+
+        <TextView
+            android:id="@+id/q7"
+            style="@style/quote"
+            android:layout_marginBottom="16dp"
+            android:text="@string/q7" />
+
+        <EditText
+            android:id="@+id/ans7"
+            style="@style/layout"
+            android:hint="@string/answer"
+            android:inputType="textCapWords" />
+
+        <View style="@style/line" />
+
+        <TextView
+            style="@style/quote"
+            android:layout_marginBottom="4dp"
+            android:text="@string/who" />
+
+        <TextView
+            android:id="@+id/q8"
+            style="@style/quote"
+            android:layout_marginBottom="16dp"
+            android:text="@string/q8" />
+
+        <EditText
+            android:id="@+id/ans8"
+            style="@style/layout"
+            android:hint="@string/answer"
+            android:inputType="textCapWords" />
+
+        <View style="@style/line" />
+
+        <TextView
+            style="@style/quote"
+            android:layout_marginBottom="4dp"
+            android:text="@string/q9a" />
+
+        <TextView
+            android:id="@+id/q9"
+            style="@style/quote"
+            android:text="@string/q9b" />
+
+        <CheckBox
+            android:id="@+id/q9_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="forQ9"
+            android:text="@string/q9_1" />
+
+        <CheckBox
+            android:id="@+id/q9_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:onClick="forQ9"
+            android:text="@string/q9_2" />
+
+        <CheckBox
+            android:id="@+id/q9_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:onClick="forQ9"
+            android:text="@string/q9_3" />
+
+        <CheckBox
+            android:id="@+id/q9_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:onClick="forQ9"
+            android:text="@string/q9_4" />
+
+        <View style="@style/line" />
+
+        <TextView
+            style="@style/quote"
+            android:layout_marginBottom="4dp"
+            android:text="@string/q10a" />
+
+        <TextView
+            android:id="@+id/q10"
+            style="@style/quote"
+            android:text="@string/q10b" />
+
+        <CheckBox
+            android:id="@+id/q10_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="forQ10"
+            android:text="@string/q10_1" />
+
+        <CheckBox
+            android:id="@+id/q10_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:onClick="forQ10"
+            android:text="@string/q10_2" />
+
+        <CheckBox
+            android:id="@+id/q10_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:onClick="forQ10"
+            android:text="@string/q10_3" />
+
+        <CheckBox
+            android:id="@+id/q10_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:onClick="forQ10"
+            android:text="@string/q10_4" />
+
+        <View style="@style/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/sharescore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/share"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:onClick="reset"
+                android:text="@string/reset"/>
+
+            <Button
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:onClick="calcResult"
+                android:text="@string/result" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
